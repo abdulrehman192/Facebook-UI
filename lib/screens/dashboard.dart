@@ -21,7 +21,6 @@ class Dashboard extends StatelessWidget {
       child: Container(
         color: Colors.white,
         width: MediaQuery.of(context).size.width,
-        height: 150,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -40,9 +39,18 @@ class Dashboard extends StatelessWidget {
                               )
                             ],
                           ),
-            Row(
-              children: <Widget>[
-                Text('Post Text goes here')
+                Row(
+                  children: <Widget>[
+                  Flexible(child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'We have some good news and some bad news... Bad news is that those who dont take action often miss out and some times, not always... A single decision determines the course of your life and your success forever. Good news is, you still have 6 days to take advantage of the 7/month to enroll into MentorBox. Click here to enroll before its too late: \n"https://get.mentorbox.com"',
+                      overflow: TextOverflow.clip,
+                    style: TextStyle(fontSize: 18),
+                    ),
+                  ),
+
+                )
               ],
             ),
             Container(
