@@ -18,9 +18,10 @@ class Dashboard extends StatelessWidget {
   Widget PostCard(BuildContext context) {
 
     return Card(
+      margin: EdgeInsets.only(top: 10),
       child: Container(
         color: Colors.white,
-        width: MediaQuery.of(context).size.width,
+        width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -68,10 +69,10 @@ class Dashboard extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: [
-                          Icon(Icons.thumb_up_outlined,size: 20,),
+                          Icon(Icons.thumb_up,size: 25,color: Colors.blue.shade700,),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('Like'),
+                            child: Text('Like',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue.shade700),),
                           )
                         ],
                       )
@@ -81,10 +82,10 @@ class Dashboard extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: [
-                          Icon(Icons.comment_bank_outlined,size: 20,),
+                          Icon(Icons.comment,size: 25,color: Colors.blue.shade700,),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('Comment'),
+                            child: Text('Comment',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue.shade700),),
                           )
                         ],
                       )
@@ -94,10 +95,10 @@ class Dashboard extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: [
-                          Icon(Icons.share_outlined,size: 20,),
+                          Icon(Icons.share,size: 25,color: Colors.blue.shade700,),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text('Share'),
+                            child: Text('Share',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue.shade700),),
                           )
                         ],
                       )
